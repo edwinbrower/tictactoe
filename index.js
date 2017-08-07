@@ -3,8 +3,24 @@ let playerSwitch = true; // If true then player1. if false player2
 let movesLeft = 9;
 let gameWon = false;
 
-let checkForWin = () => {
+let checkRows = () => {
 
+};
+
+let checkCols = () => {
+
+};
+
+let checkDiagonals = () => {
+
+};
+
+let checkForWin = (input) => {
+  let won = 'false';
+  if (checkRows(input) || checkCols(input) || checkDiagonals(input) ) {
+    won = true;
+  }
+  return won;
 };
 
 let playMove = (input) => {
@@ -30,7 +46,7 @@ while (movesLeft && !gameWon) {
   console.log(board);
   let input = getInput();
   playMove(input);
-  checkForWin();
+  checkForWin(input);
 
   if (gameWon) {
     let winner = playerSwitch ? '1' : '2';
