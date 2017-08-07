@@ -2,9 +2,10 @@
 Makes a command line tic tac toe game
 
 Setup Instructions:
-
+==============
 Run:
-
+* npm install (likely)
+* something else
 
 
 Make a command line tic-tac-toe game from scratch for two players. 
